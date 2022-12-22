@@ -1,0 +1,15 @@
+body
+{
+    display: flex;
+    justify-content: center;
+    background-color:linen;
+}
+
+div{
+    text-align: center;
+}
+
+root
+{
+    align-self: center;
+}
