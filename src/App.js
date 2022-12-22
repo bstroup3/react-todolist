@@ -10,7 +10,7 @@ function App() {
   const todoNameRef = useRef()
   
   useEffect(() => {
-    document.title = 'Todo List App';
+    document.title = 'To-Do List App';
   }, []);
 
   useEffect(() => {
@@ -45,12 +45,11 @@ function App() {
 
   return (
     <>
-      <title>Todo App</title>
-      <h1 className={style.header}>Todo List App</h1>
+      <h1 className={style.header}>To-Do List App</h1>
       <TodoList todos = {todos} toggleTodo = {toggleTodo} />
       <input className={style.textbox} ref={todoNameRef} type="text" />
       <br></br>
-      <button onClick={handleAddTodo} >Add Todo</button>
+      <button onClick={handleAddTodo} >Add To-Do</button>
       <button onClick={handleClearTodo}>Clear Completed</button>
       <div>{todos.filter(todo => !todo.complete).length} left to do</div>
     </>
