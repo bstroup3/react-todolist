@@ -2,7 +2,9 @@ body
 {
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color:linen;
+    min-height: 80vh;
 }
 
 div{
